@@ -4,7 +4,7 @@
 This is a really simple program that makes it easy to have organized NAPI modules.
 
 It works by looking in your project's src/cpp directory, and building based off of the configured "target_name" and sources.
-By default, it includes the NAPI includes and defines into your build, so you don't have to write them in `example-cabbage.config.js`.
+By default, it includes the NAPI includes and defines into your build, so you don't have to write them in `cabbage.config.cjs`.
 
 ### Usage
 ```javascript
