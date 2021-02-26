@@ -2,7 +2,10 @@ language: node_js
 node_js:
   - "15"
 
-deploy:
-  provider: npm
-  email: "bella.fusari@gmail.com"
-  api_key: ${env.AUTH_TOKEN}
+jobs:
+  include:
+    - stage: npm release
+    deploy:
+      provider: npm
+      email: "bella.fusari@gmail.com"
+      api_key: ${env.AUTH_TOKEN}

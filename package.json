@@ -7,6 +7,9 @@
   "bin": {
     "cabbage": "cabbage.js"
   },
+  "scripts": {
+    "test": "echo meow"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bfu4/cabbage.git"
@@ -32,5 +35,8 @@
   },
   "devDependencies": {
     "node-gyp": "^7.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
