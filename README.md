@@ -6,13 +6,20 @@ This is a really simple program that makes it easy to have organized NAPI module
 It works by looking in your project's src/cpp directory, and building based off of the configured "target_name" and sources.
 By default, it includes the NAPI includes and defines into your build, so you don't have to write them in `cabbage.config.cjs`.
 
-### Usage
+## Install
+```bash
+# choose your poison, i guess
+npm i cabbage-c 
+npm i -g cabbage-c
+```
+
+## Usage
 ```javascript
 cabbage generate // generate a binding.gyp (before you run cabbage build)
 cabbage build // build the binary
 ```
 
-## example-cabbage.config.js
+## cabbage.config.cjs
 
 ```js
 buildModules = [
