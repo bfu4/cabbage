@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - master
-      
+
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
@@ -17,10 +17,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          
+
   publish-gpr:
     runs-on: ubuntu-latest
     steps:
@@ -29,6 +29,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

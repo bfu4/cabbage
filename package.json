@@ -1,5 +1,5 @@
 {
-  "name": "cabbage",
+  "name": "cabbage-gyp",
   "version": "1.0.0",
   "description": "A pretty node-gyp wrapper.",
   "main": "cabbage.js",
