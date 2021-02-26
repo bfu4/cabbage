@@ -2,14 +2,10 @@
   "name": "cabbage",
   "version": "1.0.0",
   "description": "A pretty node-gyp wrapper.",
-  "main": "dist/cabbage.js",
-  "type": "module",
+  "main": "cabbage.js",
+  "type": "commonjs",
   "bin": {
-    "cabbage": "dist/cabbage.js"
-  },
-  "scripts": {
-    "build": "tsc",
-    "test": "jest"
+    "cabbage": "cabbage.js"
   },
   "repository": {
     "type": "git",
@@ -30,11 +26,9 @@
   "homepage": "https://github.com/bfu4/cabbage#readme",
   "dependencies": {
     "@babel/core": "^7.13.1",
+    "@types/node": "^14.14.31",
     "babel": "^6.23.0",
-    "jest": "^26.6.3",
-    "tslib": "^2.1.0",
-    "typescript": "^4.2.2",
-    "typescript-eslint": "^0.0.1-alpha.0"
+    "node-addon-api": "^3.1.0"
   },
   "devDependencies": {
     "node-gyp": "^7.1.2"
