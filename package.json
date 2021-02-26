@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A pretty node-gyp wrapper.",
   "main": "dist/cabbage.js",
+  "type": "module",
   "bin": {
     "cabbage": "dist/cabbage.js"
   },
