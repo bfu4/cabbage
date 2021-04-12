@@ -7,10 +7,15 @@ It works by looking in your project's src/cpp directory, and building based off 
 By default, it includes the NAPI includes and defines into your build, so you don't have to write them in `cabbage.config.cjs`.
 
 ## Install
+With NPM
 ```bash
-# choose your poison, i guess
-npm i cabbage-c 
-npm i -g cabbage-c
+no fuck you
+```
+or with Yarn
+```bash
+# choose your poison, i guess (again)
+yarn add cabbage-c 
+yarn add -g cabbage-c
 ```
 
 ## Usage
